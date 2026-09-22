@@ -1,0 +1,42 @@
+site_name: Phucuka Mzansi Foundation | Compliance & Academy Portal
+site_description: Official QMS, Academic Policies, and Curriculum Alignment for SAQA ID 118707.
+site_author: Phucuka Mzansi Foundation
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Accreditation & Qualifications:
+      - "Occupational Certificate: Software Developer (SAQA 118707)": qualification.md
+  - Quality Management System (QMS):
+      - QMS Manual Overview: qms/index.md
+      - Policy 1 - Admissions & Selection: qms/admission.md
+      - Policy 2 - Delivery Strategy: qms/delivery.md
+      - Policy 3 - Assessment & Moderation: qms/assessment.md
+  - Workplace Experience & Host MOUs: workplace.md
+
+plugins:
+  - search
